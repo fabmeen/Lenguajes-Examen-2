@@ -37,7 +37,9 @@ const ReviewDialog = ({
 		<dialog ref={dialog} onMouseDown={handleClick}>
 				<form
 					action={handleReviewFormSubmission}
-					
+					onSubmit={() => {
+						handleClose();
+					}}
 				>
 					<header>
 						<h3>Add your review</h3>
